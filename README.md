@@ -12,7 +12,7 @@ Next, retrieve the sample project from Bazel's GitHub repository by running the
 following in your command-line tool of choice:
 
 ```posix-terminal
-git clone 
+git clone https://github.com/copperbean51/my-bazel-devcontainer.git
 ```
 
 The sample project for this tutorial is in the `examples/cpp-tutorial` directory.
@@ -46,20 +46,6 @@ examples
        │   └── hello-time.h
        └── WORKSPACE
 ```
-
-There are three sets of files, each set representing a stage in this tutorial.
-In the first stage, you will build a single [target]
-(https://bazel.build/reference/glossary#target) residing in a single [package]
-(https://bazel.build/reference/glossary#package). In the second stage, you will
-build both a binary and a library from a single package. In
-the third and final stage, you will build a project with multiple packages and
-build it with multiple targets.
-
-### Summary: Introduction
-
-By installing Bazel (and Git) and cloning the repository for this tutorial, you
-have laid the foundation for your first build with Bazel. Continue to the next
-section to define some terms and set up your [workspace](https://bazel.build/reference/glossary#workspace).
 
 ## Getting started
 
@@ -364,25 +350,5 @@ Now test the last binary of this tutorial for a final `Hello world` message:
 ```posix-terminal
 bazel-bin/main/hello-world
 ```
-
-### Summary: stage 3
-
-You've now built the project as two packages with three targets and understand
-the dependencies between them, which equips you to go forth and build future
-projects with Bazel. In the next section, take a look at how to continue your
-Bazel journey.
-
-## Next steps
-
-You’ve now completed your first basic build with Bazel, but this is just the
-start. Here are some more resources to continue learning with Bazel:
-
-*   To keep focusing on C++, read about common [C++ build use cases](https://bazel.build/tutorials/cpp-use-cases).
-*   To get started with building other applications with Bazel, see the tutorials
-for [Java](https://bazel.build/start/java), [Android application](https://bazel.build/start/android-app ),
-or [iOS application](https://bazel.build/start/ios-app)).
-*   To learn more about working with local and remote repositories, read about
-[external dependencies](https://bazel.build/docs/external).
-*   To learn more about Bazel’s other rules, see this [reference guide](https://bazel.build/rules).
 
 Happy building!
