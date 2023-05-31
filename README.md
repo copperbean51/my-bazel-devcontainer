@@ -1,20 +1,5 @@
 # Bazel Tutorial: Build a C++ Project
 
-{% include "_buttons.html" %}
-
-## Introduction
-
-New to Bazel? You’re in the right place. Follow this First Build tutorial for a
-simplified introduction to using Bazel. This tutorial defines key terms as they
-are used in Bazel’s context and walks you through the basics of the Bazel
-workflow. Starting with the tools you need, you will build and run three
-projects with increasing complexity and learn how and why they get more complex.
-
-While Bazel is a [build system](https://bazel.build/basics/build-systems) that
-supports multi-language builds, this tutorial uses a C++ project as an example
-and provides the general guidelines and flow that apply to most languages.
-
-Estimated completion time: 30 minutes.
 
 ### Prerequisites
 
@@ -27,7 +12,7 @@ Next, retrieve the sample project from Bazel's GitHub repository by running the
 following in your command-line tool of choice:
 
 ```posix-terminal
-git clone https://github.com/bazelbuild/examples
+git clone 
 ```
 
 The sample project for this tutorial is in the `examples/cpp-tutorial` directory.
